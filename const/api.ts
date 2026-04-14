@@ -1,0 +1,2 @@
+export const DEFAULT_PAGE_LIMIT = 16;
+export const MAX_PAGES_TO_SHOW_WITHOUT_CONCAT = 7;
