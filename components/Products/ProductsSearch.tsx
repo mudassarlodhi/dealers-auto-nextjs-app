@@ -45,7 +45,7 @@ const ProductsSearch = () => {
   };
 
   return (
-    <div className="bg-white dark:bg-zinc-950 backdrop-blur-md  border border-zinc-200 dark:border-zinc-800 shadow-sm p-6 rounded-3xl">
+    <div className="bg-white  backdrop-blur-md  border border-zinc-200  shadow-sm p-6 rounded-3xl">
       <div className="flex flex-col lg:flex-row gap-4 w-full mb-2 items-center">
         <div className="relative w-full lg:flex-1">
           <label className="text-xs font-semibold text-zinc-500 ml-1 uppercase tracking-wider">
@@ -57,7 +57,7 @@ const ProductsSearch = () => {
             defaultValue={queryFromUrl}
             onChange={handleTextChange}
             placeholder="Search products..."
-            className="w-full px-4 py-2.5 rounded-xl border border-zinc-200 dark:border-zinc-800 bg-transparent focus:ring-2 focus:ring-black outline-none transition-all"
+            className="w-full px-4 py-2.5 rounded-xl border border-zinc-200  bg-transparent focus:ring-2 focus:ring-black outline-none transition-all"
           />
         </div>
 
@@ -76,7 +76,7 @@ const ProductsSearch = () => {
                   updatePath({ sortBy: val, q: null });
                 }
               }}
-              className="flex-1 lg:w-40 px-3 py-2.5 rounded-xl border border-zinc-200 dark:border-zinc-800 bg-transparent text-sm font-medium outline-none cursor-pointer focus:ring-2 focus:ring-black"
+              className="flex-1 lg:w-40 px-3 py-2.5 rounded-xl border border-zinc-200  bg-transparent text-sm font-medium outline-none cursor-pointer focus:ring-2 focus:ring-black"
             >
               <option value="-">None</option>
               <option value="title">Name</option>
@@ -96,7 +96,7 @@ const ProductsSearch = () => {
               }
               value={searchParams.get("order") || "asc"}
               onChange={(e) => updatePath({ order: e.target.value })}
-              className={`w-24 px-3 py-2.5 rounded-xl border border-zinc-200 dark:border-zinc-800 bg-transparent text-sm font-medium outline-none transition-all
+              className={`w-24 px-3 py-2.5 rounded-xl border border-zinc-200  bg-transparent text-sm font-medium outline-none transition-all
             ${
               !searchParams.get("sortBy") || searchParams.get("sortBy") === "-"
                 ? "opacity-40 cursor-not-allowed"

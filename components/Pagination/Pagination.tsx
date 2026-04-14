@@ -49,7 +49,7 @@ const Pagination = ({
         <button
           onClick={() => handlePageChange(currentPage - 1)}
           disabled={currentPage <= 1}
-          className="flex items-center justify-center px-3 py-2 rounded-lg border bg-white text-zinc-700 transition-all hover:bg-zinc-50 disabled:opacity-30 disabled:cursor-not-allowed dark:bg-zinc-900 dark:border-zinc-800 dark:text-zinc-300"
+          className="flex items-center justify-center px-3 py-2 rounded-lg border bg-white text-zinc-700 transition-all hover:bg-zinc-50 disabled:opacity-30 disabled:cursor-not-allowed   "
           aria-label="Previous page"
         >
           <svg
@@ -75,10 +75,10 @@ const Pagination = ({
               onClick={() => typeof page === "number" && handlePageChange(page)}
               className={`min-w-10 h-10 px-2 rounded-lg text-sm font-medium transition-all ${
                 currentPage === page
-                  ? "bg-zinc-900 text-white dark:bg-zinc-100 dark:text-zinc-900 shadow-md"
+                  ? "bg-zinc-900 text-white   shadow-md"
                   : page === "..."
                     ? "cursor-default text-zinc-400"
-                    : "bg-white border hover:border-zinc-400 dark:bg-zinc-900 dark:border-zinc-800 dark:hover:border-zinc-600"
+                    : "bg-white border hover:border-zinc-400   "
               }`}
             >
               {page}
@@ -88,7 +88,7 @@ const Pagination = ({
 
         {/* Mobile View: Page Indicator */}
         <div className="flex sm:hidden items-center px-4">
-          <span className="text-sm font-semibold text-zinc-700 dark:text-zinc-300">
+          <span className="text-sm font-semibold text-zinc-700 ">
             {currentPage}{" "}
             <span className="text-zinc-400 font-normal mx-1">of</span>{" "}
             {totalPages}
@@ -98,7 +98,7 @@ const Pagination = ({
         <button
           onClick={() => handlePageChange(currentPage + 1)}
           disabled={currentPage >= totalPages}
-          className="flex items-center justify-center px-3 py-2 rounded-lg border bg-white text-zinc-700 transition-all hover:bg-zinc-50 disabled:opacity-30 disabled:cursor-not-allowed dark:bg-zinc-900 dark:border-zinc-800 dark:text-zinc-300"
+          className="flex items-center justify-center px-3 py-2 rounded-lg border bg-white text-zinc-700 transition-all hover:bg-zinc-50 disabled:opacity-30 disabled:cursor-not-allowed   "
           aria-label="Next page"
         >
           <svg

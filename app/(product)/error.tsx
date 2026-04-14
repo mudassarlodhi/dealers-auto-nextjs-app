@@ -13,8 +13,8 @@ export default function Error({ error, reset }: ErrorProps) {
   }, [error]);
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-[400px] gap-6 p-6 text-center border-2 border-dashed border-red-200 bg-red-50 rounded-2xl dark:bg-red-950/20 dark:border-red-900/50">
-      <div className="p-4 bg-red-100 rounded-full text-red-600 dark:bg-red-900 dark:text-red-300">
+    <div className="flex flex-col items-center justify-center min-h-[400px] gap-6 p-6 text-center border-2 border-dashed border-red-200 bg-red-50 rounded-2xl">
+      <div className="p-4 bg-red-100 rounded-full text-red-600  ">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="32"
@@ -33,10 +33,10 @@ export default function Error({ error, reset }: ErrorProps) {
       </div>
 
       <div className="space-y-2">
-        <h2 className="text-2xl font-bold text-zinc-900 dark:text-zinc-50">
+        <h2 className="text-2xl font-bold text-zinc-900 ">
           Unable to Load Products
         </h2>
-        <p className="text-zinc-600 dark:text-zinc-400 max-w-md">
+        <p className="text-zinc-600  max-w-md">
           {error.message ||
             "We encountered an unexpected issue while fetching the inventory. Please try again shortly."}
         </p>
@@ -44,7 +44,7 @@ export default function Error({ error, reset }: ErrorProps) {
 
       <button
         onClick={() => reset()} //retry the server fetch
-        className="px-6 py-2.5 bg-zinc-900 text-white font-medium rounded-xl hover:bg-zinc-700 transition-colors dark:bg-zinc-100 dark:text-zinc-900 dark:hover:bg-zinc-300"
+        className="px-6 py-2.5 bg-zinc-900 text-white font-medium rounded-xl hover:bg-zinc-700 transition-colors   "
       >
         Try Again
       </button>

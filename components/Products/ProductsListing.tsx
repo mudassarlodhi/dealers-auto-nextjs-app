@@ -49,7 +49,7 @@ export default async function ProductListing({
           <ProductCard key={product.id} product={product} />
         ))}
       </div>
-      <div className="flex justify-center border-t border-zinc-200 dark:border-zinc-800 pt-8">
+      <div className="flex justify-center border-t border-zinc-200  pt-8">
         <Pagination
           totalItems={total}
           itemsPerPage={DEFAULT_PAGE_LIMIT}

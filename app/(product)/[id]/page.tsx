@@ -13,11 +13,11 @@ const ProductDetailsPage = () => {
   }
 
   return (
-    <div className="flex-1 bg-zinc-50 dark:bg-black">
+    <div className="flex-1 bg-zinc-50 ">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
         <button
           onClick={() => router.back()}
-          className="mb-6 text-sm font-bold flex items-center text-zinc-500 hover:text-black dark:hover:text-white transition-colors"
+          className="mb-6 text-sm font-bold flex items-center text-zinc-500 hover:text-black  transition-colors"
         >
           <span className="mr-2">&larr;</span> Back to Listing
         </button>
